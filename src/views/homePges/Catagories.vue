@@ -8,7 +8,7 @@
         <v-card class="text-center font-weight-bold text-h4" elevation="0">
           <v-hover v-slot="{isHovering,props}">
           <img :src="pic.image" :alt="pic.image"
-   :style="` cursor:pointer; border-radius: 5px;transition: 0.5s all ease-in-out;  scale:${isHovering ?   1.05 :1 } `" v-bind="props"/>
+   :style="` cursor:pointer; border-radius: 5px;transition: 0.5s all ease-in-out;  scale:${isHovering ?   1.1 :1 } `" v-bind="props"/>
 
           </v-hover>
           <v-card-text  class="text-center font-weight-bold  text-h6">{{pic.title}}</v-card-text>
