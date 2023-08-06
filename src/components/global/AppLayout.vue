@@ -4,6 +4,7 @@ import {ref} from "vue";
 import CartDrawer from "@/components/global/CartDrawer.vue";
 import AppNav from "@/components/global/AppNav.vue";
 import AppFooter from "@/components/global/AppFooter.vue";
+import TopOffers from "@/views/homePges/TopOffers.vue";
 
 const drawer=ref(false)
 
@@ -20,6 +21,7 @@ const drawer=ref(false)
     </v-main>
 <AppNav/>
     <AppFooter/>
+
   </v-layout>
 </div>
 </template>
