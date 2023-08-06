@@ -7,7 +7,7 @@
     <v-container>
       <v-row>
         <v-col >
-          <div class="parent d-flex justify-space-between" >
+          <div class="parent d-flex justify-space-evenly" >
             <span ><v-icon size="90">mdi-moped-outline</v-icon>Free shipping & Returns</span>
             <span class="second"><v-icon size="90">mdi-medal</v-icon>Lowest Price</span>
             <span class="second" ><v-icon size="90"  >mdi-star</v-icon>most Sell</span>
@@ -21,8 +21,18 @@
 </template>
 
 <style lang="scss">
+$small: 500px;
+$medium: 900px;
 .features{
   .second{
+    @media screen and (max-width: $small) {
+       display: flex;
+flex-direction: column;
+    }
+    @media screen and (min-width: $medium) {
+      display: flex;
+      flex-direction: column;
+    }
     position: relative;
     &::before{
       content: '';
@@ -35,6 +45,7 @@
       height: 50%;
 
     }
+
   }
 }
 </style>
